@@ -55,14 +55,14 @@
 //            print(double1)
             
             
-           //сложим дробную часть и целую
-//            let doubleVariable = 223.333
-//            let decimalPart = doubleVariable.truncatingRemainder(dividingBy: 1) * 1000
-//
-//
-//            let result = Int(doubleVariable) + Int(decimalPart)
-//
-//            print(result)
+//           сложим дробную часть и целую
+            let doubleVariable = 223.333
+            let decimalPart = doubleVariable.truncatingRemainder(dividingBy: 1) * 1000
+print(decimalPart)
+
+            let result = Int(doubleVariable) + Int(decimalPart)
+
+            print(result)
  
             
             
@@ -148,6 +148,75 @@
             default:
                 break
             }
+            
+            
+            
+//           задача 3
+            
+            
+//            пример 1
+            let year = 1980
+
+            if year % 4 == 0 {
+            print("високосный")
+            } else if year % 4 != 0 {
+            print("обычный")
+            }
+
+//            пример 2
+            
+            let year1 = 1978
+
+            if year1 % 4 == 0 {
+            print("високосный")
+            } else if year1 % 4 != 0 {
+            print("обычный")
+            }
+                        
+            
+            
+//            задача 2
+            
+            
+//            пример 1
+            
+            let number = 10
+
+            if number % 2 == 0 {
+            print("четное")
+            } else {
+            print("нечетное")
+            }
+            
+//            пример 2
+            
+            let number1 = 9
+
+            if number1 % 2 == 0 {
+            print("четное")
+            } else {
+            print("нечетное")
+            }
+            
+//            задача 1
+            
+            let num1 = 9.2
+            let num2 = 1.5
+
+            let intNum1 = Int(num1)
+            let intNum2 = Int(num2)
+            let summInt = intNum1 + intNum2
+            print(summInt)
+            
+            
+            let decimalNum1 = num1.truncatingRemainder(dividingBy: 1) * 10
+            print(decimalNum1)
+            
+            let decimalNum2 = num2.truncatingRemainder(dividingBy: 1) * 10
+            print(decimalNum2)
+            
+            let summDecimal = Double(decimalNum1) + Double(decimalNum2)
+            print(summDecimal)
             
             
     }
